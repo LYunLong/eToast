@@ -22,14 +22,14 @@ var EToast = function(containerClass,settings){
             $(".etoast-success-toast-tip").html(msg);
             $(".etoast-success-toast").fadeIn(200);
             $(".etoast-full-screen-mask").fadeIn(0);
-            setTimeout(function(){$(".etoast-success-toast").fadeOut(1000);$(".etoast-full-screen-mask").fadeOut(1000);},2000);
+            setTimeout(function(){$(".etoast-success-toast").fadeOut(1000);$(".etoast-full-screen-mask").fadeOut(1000);},((settings.expireTime)?settings.expireTime:2000));
         }
         ,
         "error":function(msg){
             $(".etoast-error-toast-tip").html(msg);
             $(".etoast-error-toast").fadeIn(200);
             $(".etoast-full-screen-mask").fadeIn(0);
-            setTimeout(function(){$(".etoast-error-toast").fadeOut(1000);$(".etoast-full-screen-mask").fadeOut(1000);},2000);
+            setTimeout(function(){$(".etoast-error-toast").fadeOut(1000);$(".etoast-full-screen-mask").fadeOut(1000);},((settings.expireTime)?settings.expireTime:2000));
         }
         ,
         "loading":function(msg){

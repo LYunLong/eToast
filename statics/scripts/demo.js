@@ -4,10 +4,11 @@
 
 $(document).ready(function(){
     var eToast = EToast(".toast-container",{
-        successImg:"statics/images/success-tip.png",
+        successImg:"statics/images/success-tip.png",  /*三种状态下的对应图片，必须设置*/
         errorImg:"statics/images/error-tip.png",
         loadingImg:"statics/images/loading-tip.gif",
-        successTip:"成功"
+        successTip:"成功",                             /*三种状态下的默认提示，可缺省*/
+        expireTime:5000,                               /*成功失败弹出层的显示时间，默认2000毫秒，可缺省*/
     });
     $(".main .title").html(common.textTitle);
     $(".main .typeIn-area textarea").attr("placeholder",common.textTip);
