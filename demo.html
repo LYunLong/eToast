@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>撰写回答Demo</title>
+    <link href="statics/styles/demo.css" rel="stylesheet">
+    <link href="statics/styles/eToast.css" rel="stylesheet">
+    <script src="statics/scripts/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="cancel">取消</div>
+    <div class="publish">发布</div>
+    <div class="head-title">撰写回答</div>
+</div>
+
+<div class="main">
+
+    <div class="title">
+    </div>
+
+    <div class="typeIn-area">
+        <textarea placeholder="你的每一次回答会帮助很多职场人（至少10个字）"></textarea>
+    </div>
+
+    <div class="state-area">
+        <div class="anonymous">
+            <input type="checkbox" id="anonymous-state" class="anonymous-state">
+            <label for="anonymous-state"></label>
+
+            <div class="anonymous-state-tip">匿名</div>
+        </div>
+        <div class="word-count">
+            <div class="current-count">0</div>
+            <div class="total-limit">/3000</div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="toast-container"></div>
+
+
+
+<script>
+    /*配置common中的属性即可替换各种参数*/
+    var common = {
+        "textLimit": 10,
+        "textTitle": "标题位",
+        "textTip": "你的每一次回答会帮助很多人（至少10个字）",
+        "publishUrl": "statics/json/response.json"
+    };
+</script>
+<script src="statics/scripts/demo.js"></script>
+<script src="statics/scripts/eToast.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: "Microsoft YaHei";
+}
+
+body {
+    background-color: #f5f8f9;
+}
+
+.header {
+    width: 100vw;
+    height: 13vw;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.cancel {
+    margin-left: 5vw;
+    float: left;
+    font-size: 4vw;
+    line-height: 13vw;
+    color: #666;
+}
+
+.head-title {
+    width: 30vw;
+    margin: 0 auto;
+    font-size: 5vw;
+    line-height: 13vw;
+    text-align: center;
+    color: #666;
+}
+
+.publish {
+    margin-right: 5vw;
+    float: right;
+    font-size: 4vw;
+    line-height: 13vw;
+    color: #ddd;
+}
+.publish.reach-limit{
+    color: #30b640;
+}
+
+.title {
+    width: 100vw;
+    height: 15vw;
+    padding: 0 5vw;
+    line-height: 15vw;
+    background-color: #f5f8f9;
+    color: #333;
+    font-size: 4vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.typeIn-area {
+    width: 100vw;
+    background-color: #fff;
+}
+
+.typeIn-area textarea {
+    width: 100vw;
+    padding: 6vw 5vw;
+    color: #999;
+    box-sizing: border-box;
+    height: 60vw;
+    border: 0px;
+    font-size: 4vw;
+    resize: none;
+    outline: none;
+}
+
+.state-area {
+    width: 100vw;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 5vw 6vw;
+    box-sizing: border-box;
+}
+
+.anonymous {
+    float: left;
+}
+
+.anonymous-state {
+    display: none;
+}
+
+.anonymous-state + label {
+    background-color: #FFF;
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    margin-right: 1vw;
+    height: 4vw;
+    width: 4vw;
+}
+
+.anonymous-state:checked + label {
+    border: 1px solid #eee;
+    color: #fff;
+    background-color: #30b640;
+}
+
+.anonymous-state:checked + label:after {
+    content: '\2714';
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.anonymous-state-tip {
+    float: right;
+    color: #999;
+    line-height: 4vw;
+    font-size: 4vw;
+}
+
+.word-count {
+    float: right;
+    overflow: hidden;
+}
+
+.current-count {
+    float: left;
+    color: #ff5a5f;
+    font-size: 4vw;
+}
+
+.current-count.reach-limit {
+    color: #30b640;
+}
+
+.total-limit {
+    float: left;
+    font-size: 4vw;
+}
+
