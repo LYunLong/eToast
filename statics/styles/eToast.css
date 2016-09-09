@@ -1,4 +1,4 @@
-.etoast-full-screen-mask{
+.etoast-full-screen-mask {
     display: none;
     position: fixed;
     height: 100%;
@@ -6,10 +6,10 @@
     top: 0;
     left: 0;
     background-color: #000;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
 }
 
-.etoast-success-toast{
+.etoast-success-toast {
     display: none;
     position: fixed;
     left: 20vw;
@@ -22,20 +22,21 @@
     background-color: #fff;
 }
 
-.etoast-success-toast-img{
+.etoast-success-toast-img {
     display: block;
     height: 40vw;
     width: 40vw;
     margin: 2vw auto 0;
 }
-.etoast-success-toast-tip{
+
+.etoast-success-toast-tip {
     width: 100%;
     line-height: 15vw;
     font-size: 5vw;
     text-align: center;
 }
 
-.etoast-error-toast{
+.etoast-error-toast {
     display: none;
     position: fixed;
     left: 20vw;
@@ -47,20 +48,22 @@
     overflow: hidden;
     background-color: #fff;
 }
-.etoast-error-toast-img{
+
+.etoast-error-toast-img {
     display: block;
     height: 40vw;
     width: 40vw;
     margin: 2vw auto 0;
 }
-.etoast-error-toast-tip{
+
+.etoast-error-toast-tip {
     width: 100%;
     line-height: 15vw;
     font-size: 5vw;
     text-align: center;
 }
 
-.etoast-loading-toast{
+.etoast-loading-toast {
     display: none;
     position: fixed;
     left: 20vw;
@@ -72,13 +75,15 @@
     overflow: hidden;
     background-color: #fff;
 }
-.etoast-loading-toast-img{
+
+.etoast-loading-toast-img {
     display: block;
     height: 40vw;
     width: 40vw;
     margin: 2vw auto 0;
 }
-.etoast-loading-toast-tip{
+
+.etoast-loading-toast-tip {
     width: 100%;
     line-height: 15vw;
     font-size: 5vw;
